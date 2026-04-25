@@ -1,51 +1,83 @@
-# Customer Churn Analysis & Prediction
+# 📊 Customer Churn Analysis & Prediction
 
 ## 🔍 Objective
-Analyze customer behavior and predict churn to help businesses reduce customer loss and improve retention strategies.
-## 📊 Problem Statement
-Customer churn is a major challenge in subscription-based businesses. Identifying customers likely to leave allows companies to take preventive actions.
-## ⚙️ Steps Performed
-### 1. Data Cleaning
+Analyze customer behavior and predict churn to help businesses improve retention and reduce customer loss using data-driven insights.
+
+---
+
+## 📌 Problem Statement
+Customer churn is a major challenge in subscription-based businesses. Identifying customers likely to leave enables proactive retention strategies and improves business performance.
+
+---
+
+## 🔄 Data Processing (ETL Pipeline)
+- Extracted raw telecom customer dataset
+- Transformed data by cleaning missing values and correcting inconsistencies
+- Loaded processed data for analysis and modeling
 - Removed irrelevant columns (customerID)
-- Converted TotalCharges to numeric
-- Handled missing values using median
+- Converted TotalCharges to numeric format
+- Handled missing values using median imputation
 
-### 2. Exploratory Data Analysis (EDA)
-- Analyzed churn distribution
-- Compared churn with Monthly Charges and Contract Type
-- Identified key behavioral patterns
+---
 
-### 3. Feature Engineering
-- Converted categorical variables using one-hot encoding
+## 📊 Exploratory Data Analysis (EDA)
+- Analyzed churn distribution across customer segments
+- Identified patterns between churn and contract type
+- Studied impact of monthly charges on churn behavior
+- Discovered high-risk customer groups
 
-### 4. Model Building
-- Logistic Regression
+---
+
+## ⚙️ Feature Engineering
+- Encoded categorical variables using one-hot encoding
+- Scaled numerical features for model performance
+
+---
+
+## 🤖 Model Building
+- Logistic Regression (Baseline Model)
 - Artificial Neural Network (ANN)
 
-### 5. Evaluation
-- Compared models using accuracy and classification metrics
+---
 
-## 📈 Key Insights
+## 📈 Evaluation Results
+- Model Accuracy: ~81%
+- Evaluated using:
+  - Confusion Matrix
+  - Precision, Recall, F1-score
 
-- Customers with **month-to-month contracts** have the highest churn rate  
-- Customers with **higher monthly charges** are more likely to churn  
-- Long-term contracts significantly reduce churn risk  
-- Certain payment methods are associated with higher churn  
+---
 
+## 🔍 Key Insights
+- Month-to-month contract customers show highest churn rate
+- Higher monthly charges increase likelihood of churn
+- Long-term contracts significantly reduce churn probability
+- Payment method influences customer retention behavior
 
-## 🧠 Business Recommendations
+---
 
-- Offer incentives for long-term contracts  
-- Target high-charge customers with retention offers  
-- Improve experience for high-risk customer segments  
-- Focus retention campaigns on month-to-month users  
+## 📌 Business Impact
+- Helps identify high-risk customers for targeted retention strategies
+- Supports decision-making for marketing and customer engagement teams
+- Improves operational efficiency by reducing churn-related revenue loss
+
+---
+
+## 🧠 Recommendations
+- Promote long-term subscription plans
+- Offer discounts to high-risk high-charge customers
+- Improve service experience for at-risk segments
+- Focus retention campaigns on month-to-month users
+
+---
 
 ## 🛠 Tools & Technologies
 - Python (Pandas, NumPy)
 - Data Visualization (Matplotlib, Seaborn)
 - Machine Learning (Scikit-learn)
-- Deep Learning (TensorFlow/Keras)
--
+- Deep Learning (TensorFlow / Keras)
+
+---
 
 ## 🚀 Outcome
-Built a predictive model and extracted actionable insights to support data-driven business decisions.
+Built a predictive churn model and extracted actionable insights to support business decision-making and improve customer retention strategies.
